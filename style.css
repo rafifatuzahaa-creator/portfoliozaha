@@ -1,0 +1,405 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+.jumbotron {
+  padding: 30px;
+  text-align: center;
+  user-select: none;
+  background-color: #000000;
+  color: #ff00cc;
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #ff00cc;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  user-select: none;
+  z-index: 1000;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: inline;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+nav a {
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: font-weight 0.5s ease;
+}
+
+nav a:hover {
+  font-weight: 800;
+}
+
+.bg-section {
+  background-image: url("assets/Background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+.overlay-text {
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+}
+
+.overlay-text .title {
+  font-size: 7rem;
+  font-weight: 900;
+  color: #0066ff;
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.overlay-text .description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.5;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.marquee3k {
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 24px;
+  background-color: #ff00cc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.about-section {
+  width: 100%;
+  padding: 100px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 85%;
+  max-width: 1600px;
+}
+
+.about-photo {
+  width: 50%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.about-text {
+  max-width: 700px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-in-out;
+  font-family: "Inter", sans-serif;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  color: #0047ff;
+}
+
+.about-desc {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.about-text.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.marquee-gallery {
+  background: #000;
+  padding: 60px 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee-inner {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.poster-item {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.poster-item img {
+  height: 570px;
+  width: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.45);
+  transition: transform 0.45s ease;
+  cursor: pointer;
+}
+
+.poster-item img:hover {
+  transform: scale(1.09);
+}
+
+.marquee-gallery + .marquee-gallery {
+  margin-top: -80px;
+}
+
+.char-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.char-item img {
+  height: 400px;
+  width: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.45);
+  transition: transform 0.45s ease;
+  cursor: pointer;
+}
+
+.char-item img:hover {
+  transform: scale(1.09);
+}
+
+.art-gallery {
+  width: 100%;
+  background: black;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.art-gallery .big-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.art-gallery .big-image img {
+  width: 85%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.art-gallery .bottom-images {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.art-gallery .bottom-images img {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 30px 0px;
+  text-align: center;
+  user-select: none;
+  margin-top: 75px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: black;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.footer .row a img {
+  width: 67px;
+  height: 67px;
+  margin: 0% 5%;
+  transition: transform 0.5s;
+}
+
+.footer .row a img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 576px) {
+
+  nav a {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+
+  .overlay-text .title {
+    font-size: 3rem;
+  }
+
+  .overlay-text .description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .about-photo {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .poster-item img {
+    height: 340px;
+  }
+
+  .char-item img {
+    height: 260px;
+  }
+
+  .art-gallery .big-image img {
+    width: 92%;
+  }
+
+  .art-gallery .bottom-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .art-gallery .bottom-images img {
+    width: 80%;
+  }
+
+  .footer .row a img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .overlay-text .title {
+    font-size: 4.5rem;
+  }
+
+  .overlay-text .description {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .about-photo {
+    width: 75%;
+  }
+
+  .poster-item img {
+    height: 420px;
+  }
+
+  .char-item img {
+    height: 320px;
+  }
+
+  .art-gallery .bottom-images img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .overlay-text .title {
+    font-size: 5.5rem;
+  }
+
+  .about-wrapper {
+    gap: 40px;
+  }
+
+  .poster-item img {
+    height: 500px;
+  }
+
+  .char-item img {
+    height: 360px;
+  }
+
+  .art-gallery .big-image img {
+    max-width: 900px;
+  }
+}
